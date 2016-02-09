@@ -13,11 +13,6 @@ angular.module('starter.controllers', [])
       $ionicSideMenuDelegate.toggleLeft();
     };
 
-    $scope.options = {
-      loop: false,
-      speed: 500
-    };
-
     $scope.goTo = function (state) {
       $state.go(state);
     };

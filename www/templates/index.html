@@ -2,9 +2,10 @@
   <ion-side-menu-content>
     <ion-nav-view name="menuContent">
       <ion-content class="sm-full-height" render-swiper scroll="false">
-        <video autoplay poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+        <video autoplay poster="" id="bgvid" loop>
           <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
           <source src="../img/background.mp4" type="video/mp4">
+          <source src="../img/background.webm" type="video/webm">
         </video>
         <div class="text-center">
           <a id="sm-index-bars" ng-click="toggleLeftSideMenu()"></a>
@@ -20,25 +21,25 @@
   <ion-side-menu side="left" width="60">
     <ion-content>
       <ion-list>
-        <ion-item menu-close ng-click="goTo('schedule')" class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
+        <ion-item menu-close ng-click="goTo('index')" class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
           
         </ion-item>
-        <ion-item menu-close class="sm-list-item" style="background-color: #e74c3c; color: #c0392b;">
+        <ion-item menu-close class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
           
         </ion-item>
         <ion-item menu-close class="sm-list-item" style="background-color: #f1c40f; color: #f39c12;">
           
         </ion-item>
-        <ion-item menu-close class="sm-list-item" style="background-color: #3498db; color: #2980b9;">
+        <ion-item menu-close class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
           
         </ion-item>
-        <ion-item menu-close class="sm-list-item" style="background-color: #2ecc71; color: #27ae60;">
+        <ion-item menu-close class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
           
         </ion-item>
-        <ion-item menu-close class="sm-list-item" style="background-color: #9b59b6; color: #ecf0f1;">
+        <ion-item menu-close class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
           
         </ion-item>
-        <ion-item menu-close class="sm-list-item" style="background-color: #ecf0f1; color: #e74c3c;">
+        <ion-item menu-close class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
           
         </ion-item>
       </ion-list>
