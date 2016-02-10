@@ -16,29 +16,32 @@ angular.module('snowdays', ['ionic', 'starter.controllers'])
         cordova.plugins.Keyboard.disableScroll(true);
 
       }
+
       if (window.StatusBar) {
-        // org.apache.cordova.statusbar required
         StatusBar.styleDefault();
       }
     });
+
   })
 
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 
-      .state('index', {
-        url: '/',
-        templateUrl: 'templates/index.html',
+      .state('m', {
+        url: '/m',
+        abstract: true,
+        templateUrl: 'templates/menu.html',
         controller: 'AppCtrl'
       })
-
-      .state('info', {
-        url: '/info',
-        templateUrl: 'templates/info.html',
-        controller: 'AppCtrl'
+      .state('m.index', {
+        url: '/index',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/index.html'
+          }
+        }
       })
-
-      .state('app.schedule', {
+      .state('m.schedule', {
         url: '/schedule',
         views: {
           'menuContent': {
@@ -46,46 +49,82 @@ angular.module('snowdays', ['ionic', 'starter.controllers'])
           }
         }
       })
-
-      .state('app.browse', {
-        url: '/browse',
+      .state('m.trophy', {
+        url: '/trophy',
         views: {
           'menuContent': {
-            templateUrl: 'templates/browse.html'
+            templateUrl: 'templates/trophy.html'
           }
         }
       })
-      .state('app.index', {
-        url: '/index',
+      .state('m.pictures', {
+        url: '/pictures',
         views: {
           'menuContent': {
-            templateUrl: 'templates/index.html',
-            controller: 'PlaylistsCtrl'
+            templateUrl: 'templates/pictures.html'
           }
         }
       })
-
-      .state('app.single', {
-        url: '/playlists/:playlistId',
+      .state('m.videos', {
+        url: '/videos',
         views: {
           'menuContent': {
-            templateUrl: 'templates/playlist.html',
-            controller: 'PlaylistCtrl'
+            templateUrl: 'templates/videos.html'
+          }
+        }
+      })
+      .state('m.sponsors', {
+        url: '/sponsors',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/sponsors.html'
+          }
+        }
+      })
+      .state('m.contacts', {
+        url: '/contacts',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/contacts.html'
           }
         }
       });
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/m/index');
   })
-  .directive('renderSwiper', function () {
+  .directive('renderSvg', function () {
     return {
       // Restrict it to be an attribute in this case
       restrict: 'A',
       // responsible for registering DOM listeners as well as updating the DOM
       link: function (scope, element, attrs) {
-        var swiper = new Swiper('.swiper-container', {
-          paginationClickable: true,
-          pagination: '.swiper-pagination'
+        jQuery('img.svg').each(function(){
+          var $img = jQuery(this);
+          var imgID = $img.attr('id');
+          var imgClass = $img.attr('class');
+          var imgURL = $img.attr('src');
+
+          jQuery.get(imgURL, function(data) {
+            // Get the SVG tag, ignore the rest
+            var $svg = jQuery(data).find('svg');
+
+            // Add replaced image's ID to the new SVG
+            if(typeof imgID !== 'undefined') {
+              $svg = $svg.attr('id', imgID);
+            }
+            // Add replaced image's classes to the new SVG
+            if(typeof imgClass !== 'undefined') {
+              $svg = $svg.attr('class', imgClass+' replaced-svg');
+            }
+
+            // Remove any invalid XML tags as per http://validator.w3.org
+            $svg = $svg.removeAttr('xmlns:a');
+
+            // Replace image with new SVG
+            $img.replaceWith($svg);
+
+          }, 'xml');
+
         });
       }
     };

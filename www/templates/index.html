@@ -1,48 +1,15 @@
-<ion-side-menus enable-menu-with-back-views="false">
-  <ion-side-menu-content>
-    <ion-nav-view name="menuContent">
-      <ion-content class="sm-full-height" render-swiper scroll="false">
-        <video autoplay poster="" id="bgvid" loop>
-          <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-          <source src="../img/background.mp4" type="video/mp4">
-          <source src="../img/background.webm" type="video/webm">
-        </video>
-        <div class="text-center">
-          <a id="sm-index-bars" ng-click="toggleLeftSideMenu()"></a>
-          <h3 class="title">SNOWDAYS</h3>
-          <h5 class="sm-index-subtitle text-center">Europe’s biggest winter sport event for<br>
-            students organized by students.</h5>
-          <button class="sm-button-squared" ng-click="goTo('info')">LEARN MORE</button>
-        </div>
-      </ion-content>
-    </ion-nav-view>
-  </ion-side-menu-content>
-
-  <ion-side-menu side="left" width="60">
-    <ion-content>
-      <ion-list>
-        <ion-item menu-close ng-click="goTo('index')" class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
-          
-        </ion-item>
-        <ion-item menu-close class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
-          
-        </ion-item>
-        <ion-item menu-close class="sm-list-item" style="background-color: #f1c40f; color: #f39c12;">
-          
-        </ion-item>
-        <ion-item menu-close class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
-          
-        </ion-item>
-        <ion-item menu-close class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
-          
-        </ion-item>
-        <ion-item menu-close class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
-          
-        </ion-item>
-        <ion-item menu-close class="sm-list-item" style="background-color: #ecf0f1; color: #bdc3c7;">
-          
-        </ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-side-menu>
-</ion-side-menus>
+<ion-content class="sm-full-height" render-swiper scroll="false">
+  <!--<video autoplay poster="" id="bgvid" loop>
+    &lt;!&ndash; WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  &ndash;&gt;
+    <source src="../img/background.mp4" type="video/mp4">
+    <source src="../img/background.webm" type="video/webm">
+  </video>-->
+  <div class="text-center">
+    <img src="../img/svg/lines7.svg" id="sm-index-bars" ng-click="toggleLeftSideMenu()">
+    <div ng-click="credits()"><img id="sm-index-credits" class="svg" src="../img/svg/light92.svg"></div>
+    <h3 class="title">SNOWDAYS</h3>
+    <h5 class="sm-index-subtitle text-center">Europe’s biggest winter sport event for<br>
+      students organized by students.</h5>
+    <button class="sm-button-squared" ng-click="goTo('info')">LEARN MORE</button>
+  </div>
+</ion-content>

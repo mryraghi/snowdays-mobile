@@ -20,11 +20,20 @@
 
 @font-face {
   font-family: 'BentonSans Regular';
-  src: url('../fonts/BentonSans%20Regular.eot');
-  src: url('../fonts/BentonSans%20Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/BentonSans%20Regular.woff') format('woff'),
-  url('../fonts/BentonSans%20Regular.ttf') format('truetype'),
-  url('../fonts/BentonSans%20Regular.svg') format('svg');
+  src: url('../fonts/BentonSansRegular/BentonSans%20Regular.eot');
+  src: url('../fonts/BentonSansRegular/BentonSans%20Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BentonSansRegular/BentonSans%20Regular.woff') format('woff'),
+  url('../fonts/BentonSansRegular/BentonSans%20Regular.ttf') format('truetype'),
+  url('../fonts/BentonSansRegular/BentonSans%20Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'BentonSans Medium';
+  src: url('../fonts/BentonSansMedium/BentonSans%20Medium.eot');
+  src: url('../fonts/BentonSansMedium/BentonSans%20Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BentonSansMedium/BentonSans%20Medium.woff') format('woff'),
+  url('../fonts/BentonSansMedium/BentonSans%20Medium.ttf') format('truetype'),
+  url('../fonts/BentonSansMedium/BentonSans%20Medium.svg') format('svg');
 }
 
 /* INDEX */
@@ -50,7 +59,7 @@ button.sm-button-squared {
   background: transparent;
   border: 2px #393E46 solid;
   color: #393E46;
-  font-family: 'BentonSans Regular', sans-serif;
+  font-family: 'BentonSans Medium', sans-serif;
   font-weight: 700;
 }
 
@@ -66,26 +75,58 @@ video {
 
 #sm-index-bars {
   color: #4d4d4d;
-  font-size: 25px;
+  height: 20px;
   position: absolute;
   top: 20px;
   left: 20px;
   font-family: fontawesome, sans-serif;
 }
 
+#sm-menu-bars {
+  height: 20px;
+  width: 20px;
+  margin: auto 0 auto 7px;
+}
+
+#sm-index-credits {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  fill: #4d4d4d;
+}
+
 .sm-list-item {
-  font-family: fontawesome, sans-serif;
-  text-align: center;
-  vertical-align: middle;
-  height: 60px;
-  line-height: 27px;
-  font-size: 25px;
+  font-family: 'BentonSans Medium', sans-serif;
+  color: #aaa;
+}
+
+.ion-chevron-left:before {
+  margin-right: 5px;
+}
+
+.sm-list-item img {
+  height: 20px;
+}
+
+ion-item.item {
+  border: none;
+}
+
+ion-item.item a {
+  width: 100%;
+  line-height: 24px;
+  display: flex;
+}
+
+ion-item.item svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  fill: #AAAAAA;
 }
 
 .sm-full-height {
-  height: 100%;
-}
-
-.scroll {
   height: 100%;
 }
