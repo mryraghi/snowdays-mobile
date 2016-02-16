@@ -32,6 +32,83 @@ angular.module('starter.controllers', [])
     // Open the login modal
     $scope.credits = function () {
       $scope.modal.show();
+      console.log("you tried");
+    };
+  })
+
+  .controller('videoViewer',function($scope, $ionicModal, $timeout, $state){
+
+    $scope.goTo = function (state) {
+      $state.go(state);
     };
 
-  });
+    $ionicModal.fromTemplateUrl('templates/credits.html', {
+      scope: $scope
+    }).then(function(modal){
+      $scope.modal = modal;
+    })
+
+    $scope.openPicture = function(){
+      $scope.modal.show();
+      console.log("you tried");
+    }
+
+  })
+
+  .controller('FullscreenImageCtrl',
+  function ($scope, $ionicModal) {
+
+    $ionicModal.fromTemplateUrl('picturemodal.html', {
+      scope: $scope,
+      animation: 'slide-in-up'
+    }).then(function(modal) {
+      $scope.modal = modal;
+    });
+
+    $scope.openModal = function() {
+      $scope.modal.show();
+    };
+
+    $scope.closeModal = function() {
+      $scope.modal.hide();
+    };
+
+    //Cleanup the modal when we're done with it!
+    $scope.$on('$destroy', function() {
+      $scope.modal.remove();
+    });
+    // Execute action on hide modal
+    $scope.$on('modal.hidden', function() {
+      // Execute action
+    });
+    // Execute action on remove modal
+    $scope.$on('modal.removed', function() {
+      // Execute action
+    });
+    $scope.$on('modal.shown', function() {
+      console.log('Modal is shown!');
+    });
+
+    $scope.imageSrc = 'http://ionicframework.com/img/ionic-logo-blog.png';
+
+    $scope.showImage = function(index) {
+      console.log('Modal is shown!');
+      switch(index) {
+        case 1:
+          $scope.imageSrc  = '../img/testpicture.jpg';
+          break;
+        case 2:
+          $scope.imageSrc  = '../img/testpicture.jpg';
+          break;
+        case 3:
+          $scope.imageSrc  = '../img/testpicture.jpg';
+          break;
+      }
+      $scope.modal.show();
+    }
+    $scope.fuck = function () {
+      console.log('Modal is shown!');
+
+    }
+  }
+);

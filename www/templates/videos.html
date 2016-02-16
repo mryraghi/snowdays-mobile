@@ -1,13 +1,21 @@
-<ion-view view-title="Videos">
-  <ion-nav-bar class="bar-stable">
-    <ion-nav-back-button>
-    </ion-nav-back-button>
+<html ng-controller="videoviewer">
+  <ion-view view-title="Videos">
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
 
-    <ion-nav-buttons side="left">
-      <img src="../img/svg/lines7.svg" id="sm-menu-bars" menu-toggle="left">
-    </ion-nav-buttons>
-  </ion-nav-bar>
-  <ion-content>
-    <h1>Videos</h1>
-  </ion-content>
-</ion-view>
+      <ion-nav-buttons side="left">
+        <img src="../img/svg/lines7.svg" id="sm-menu-bars" menu-toggle="left">
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <body ng-controller="test">
+    <ion-content>
+      <h1>Videos</h1>
+      <div ng-click="openPicture()">
+        <a class="button" ng-click="openPicture()">hi there</a>
+      </div>
+    </ion-content>
+    </body>
+  </ion-view>
+</html>

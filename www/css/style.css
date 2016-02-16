@@ -130,3 +130,106 @@ ion-item.item svg {
 .sm-full-height {
   height: 100%;
 }
+/* Schedule */
+
+ion-slide-box.schedule{
+  background: black;
+}
+
+ion-slide.firstday {
+  background-image: url("../img/firstday.png");
+  height: inherit;
+  border-right: groove;
+  border-left: groove;
+  border-width: 1px;
+}
+ion-slide.secondday{
+  background-image: url("../img/secondday.png");
+  height: inherit;
+  border-right: groove;
+  border-left: groove;
+  border-width: 1px;
+
+}
+ion-slide.thirdday{
+  background-image: url("../img/thirdday.png");
+  border-right: groove;
+  border-left: groove;
+  border-width: 1px;
+
+}
+ion-item.dayitem {
+  border-bottom: dotted;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-color: black;
+  border-width: 1px;
+  background: inherit;
+  font-family: Roboto;
+}
+
+/* Contacts*/
+
+button.redbutton{
+  background-image: url("../img/rednumber.png");
+}
+button.bluebutton{
+  background-image: url("../img/bluenumber.png");
+}
+button.yellowbutton{
+  background-image: url("../img/yellownumber.png");
+}
+button.contactbutton{
+  font-family: Tahoma;
+  font-weight: bold;
+  width: 90vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  font-size: 5vh;
+  border: groove;
+  border-color: grey;
+  border-width: 4px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+div.contactpanel{
+  align-content: center;
+  padding-bottom: 1vh;
+  align:center;
+  width: 100vw;
+  /*padding-top: 2%;*/
+}
+div.contacttitles{
+  padding-right: 10px;
+}
+h1.contanttitles{
+  font-size: 150%;
+  font-family: Roboto;
+}
+
+/* photos */
+
+
+/* other */
+
+.family-icon-scroller {
+  height: 87px;
+  -webkit-overflow-scrolling: touch;
+  padding: 15px 15px 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  list-style: none;
+}
+
+.family-icon {
+  display: inline-block;
+  vertical-align: top;
+  height: 5%;
+  width: 5%;
+  white-space: normal;
+  margin-right: 10px;
+  margin-left: 10px;
+}

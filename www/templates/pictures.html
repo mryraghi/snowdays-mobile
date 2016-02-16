@@ -1,4 +1,169 @@
-<ion-view view-title="Pictures">
+<ion-view title="Pictures">
+  <ion-nav-bar class="bar-stable">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+    <ion-nav-buttons side="left">
+      <img src="../img/svg/lines7.svg" id="sm-menu-bars" menu-toggle="left">
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+<link rel="stylesheet" href="css/pictures.css">
+  <ion-content>
+    <a class="button" ng-click="showImage(1)">try</a>
+
+    <div class="card">
+    <div class="item item-divider">Best Photos TODAY!</div>
+    <div>
+      <ul class="family-icon-scroller">
+        <li class="family-icon"><img ng-src="images/face-icons/face-crying.png" /></li>
+        <li class="family-icon"><img ng-src="images/face-icons/face-angry.png" /></li>
+        <li class="family-icon"><img ng-src="images/face-icons/face-asleep.png" /></li>
+        <li class="family-icon"><img ng-src="images/face-icons/face-confused.png" /></li>
+        <li class="family-icon"><img ng-src="images/face-icons/face-angel.png" /></li>
+        <li class="family-icon"><img ng-src="images/face-icons/face-devil-grin.png" /></li>
+        <li class="family-icon"><img ng-src="images/face-icons/face-embarrassed.png" /></li>
+        <li class="family-icon"><img ng-src="images/face-icons/face-foot-in-mouth.png" /></li>
+        <li class="family-icon"><img ng-src="images/face-icons/face-gearhead-female-smile.png" /></li>
+        <li class="family-icon"><img ng-src="images/face-icons/face-gearhead-male-smile.png" /></li>
+        <li class="family-icon"><img ng-src="images/face-icons/face-glasses.png" /></li>
+
+      </ul>
+    </div>
+    <!--<ion-slide>
+      <ion-list ho>
+        <ion-item>
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+        </ion-item>
+        <ion-item>
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+        </ion-item>
+        <ion-item>
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+        </ion-item>
+        <ion-item>
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+        </ion-item>
+        <ion-item>
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+        </ion-item>
+        <ion-item>
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+        </ion-item>
+      </ion-list>
+    </ion-slide>
+      <ion-scroll scrollbar-x="true" zooming="true" direction="x" style="width: 5000px; height: 80px">
+
+
+
+        <div scrollable="true" style="width: 5000px; height: px">
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+          <img height="100px" ng-src="../img/thirdday.png" ng-click="showImage(1)">
+        </div>
+      </ion-scroll>-->
+  </div>
+    <div class="card">
+      <div class="item item-divider">Photos from our TEAM</div>
+      <div>
+        <ul class="family-icon-scroller">
+          <li class="family-icon"><img ng-src="images/face-icons/face-crying.png" /></li>
+          <li class="family-icon"><img ng-src="images/face-icons/face-angry.png" /></li>
+          <li class="family-icon"><img ng-src="images/face-icons/face-asleep.png" /></li>
+          <li class="family-icon"><img ng-src="images/face-icons/face-confused.png" /></li>
+          <li class="family-icon"><img ng-src="images/face-icons/face-angel.png" /></li>
+          <li class="family-icon"><img ng-src="images/face-icons/face-devil-grin.png" /></li>
+          <li class="family-icon"><img ng-src="images/face-icons/face-embarrassed.png" /></li>
+          <li class="family-icon"><img ng-src="images/face-icons/face-foot-in-mouth.png" /></li>
+          <li class="family-icon"><img ng-src="images/face-icons/face-gearhead-female-smile.png" /></li>
+          <li class="family-icon"><img ng-src="images/face-icons/face-gearhead-male-smile.png" /></li>
+          <li class="family-icon"><img ng-src="images/face-icons/face-glasses.png" /></li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <script id="picturemodal.html" type="text/ng-template">
+      <div class="modal image-modal transparent" ng-click="closeModal()">
+        <ion-pane class="transparent">
+          <img ng-src="{{imageSrc}}" class="fullscreen-image"/>
+        </ion-pane>
+      </div>
+    </script>
+  </ion-content>
+</ion-view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<ion-view view-title="Pictures">
   <ion-nav-bar class="bar-stable">
     <ion-nav-back-button>
     </ion-nav-back-button>
@@ -10,4 +175,6 @@
   <ion-content>
     <h1>Pictures</h1>
   </ion-content>
-</ion-view>
+</ion-view>>
+
+

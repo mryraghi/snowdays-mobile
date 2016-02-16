@@ -16,7 +16,7 @@ angular.module('snowdays', ['ionic', 'starter.controllers'])
         cordova.plugins.Keyboard.disableScroll(true);
 
       }
-
+      angular.module('')
       if (window.StatusBar) {
         StatusBar.styleDefault();
       }
@@ -61,7 +61,8 @@ angular.module('snowdays', ['ionic', 'starter.controllers'])
         url: '/pictures',
         views: {
           'menuContent': {
-            templateUrl: 'templates/pictures.html'
+            templateUrl: 'templates/pictures.html',
+            controller: 'FullscreenImageCtrl'
           }
         }
       })
@@ -69,7 +70,8 @@ angular.module('snowdays', ['ionic', 'starter.controllers'])
         url: '/videos',
         views: {
           'menuContent': {
-            templateUrl: 'templates/videos.html'
+            templateUrl: 'templates/videos.html',
+            controller: 'videoViewer'
           }
         }
       })
