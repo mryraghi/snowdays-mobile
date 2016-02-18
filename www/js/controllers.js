@@ -71,6 +71,7 @@ angular.module('starter.controllers', [])
 
     $scope.closeModal = function() {
       $scope.modal.hide();
+      $scope.imageSrc = '../img/thisisdoneonpurpose.png';
     };
 
     //Cleanup the modal when we're done with it!
@@ -89,26 +90,9 @@ angular.module('starter.controllers', [])
       console.log('Modal is shown!');
     });
 
-    $scope.imageSrc = 'http://ionicframework.com/img/ionic-logo-blog.png';
-
     $scope.showImage = function(index) {
-      console.log('Modal is shown!');
-      switch(index) {
-        case 1:
-          $scope.imageSrc  = '../img/testpicture.jpg';
-          break;
-        case 2:
-          $scope.imageSrc  = '../img/testpicture.jpg';
-          break;
-        case 3:
-          $scope.imageSrc  = '../img/testpicture.jpg';
-          break;
-      }
+      $scope.imageSrc  = 'https://dl.dropboxusercontent.com/u/107006905/snow'+ index+'.jpg';
       $scope.modal.show();
-    }
-    $scope.fuck = function () {
-      console.log('Modal is shown!');
-
     }
   }
 );

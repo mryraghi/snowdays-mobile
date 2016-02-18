@@ -36,6 +36,15 @@
   url('../fonts/BentonSansMedium/BentonSans%20Medium.svg') format('svg');
 }
 
+@font-face {
+  font-family: 'Futura Regular';
+  src: url('../fonts/FuturaStd-Book.otf');
+  /*src: url('../fonts/BentonSansRegular/BentonSans%20Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BentonSansRegular/BentonSans%20Regular.woff') format('woff'),
+  url('../fonts/BentonSansRegular/BentonSans%20Regular.ttf') format('truetype'),
+  url('../fonts/BentonSansRegular/BentonSans%20Regular.svg') format('svg');*/
+}
+
 /* INDEX */
 h3.title {
   font-family: Againts, sans-serif;
@@ -138,14 +147,14 @@ ion-slide-box.schedule{
 
 ion-slide.firstday {
   background-image: url("../img/firstday.png");
-  height: inherit;
+  height: 94.5vh;
   border-right: groove;
   border-left: groove;
   border-width: 1px;
 }
 ion-slide.secondday{
   background-image: url("../img/secondday.png");
-  height: inherit;
+  height: 94.5vh;
   border-right: groove;
   border-left: groove;
   border-width: 1px;
@@ -153,6 +162,7 @@ ion-slide.secondday{
 }
 ion-slide.thirdday{
   background-image: url("../img/thirdday.png");
+  height: 94.5vh;
   border-right: groove;
   border-left: groove;
   border-width: 1px;
@@ -168,6 +178,11 @@ ion-item.dayitem {
   font-family: Roboto;
 }
 
+h1.scheduletitles{
+  font-family: "Futura Regular";
+  padding-top: 1vh;
+  padding-left: 2vw;
+}
 /* Contacts*/
 
 button.redbutton{
@@ -180,7 +195,7 @@ button.yellowbutton{
   background-image: url("../img/yellownumber.png");
 }
 button.contactbutton{
-  font-family: Tahoma;
+  font-family: "Futura Regular";
   font-weight: bold;
   width: 90vw;
   padding-top: 0.5vh;
@@ -188,7 +203,7 @@ button.contactbutton{
   font-size: 5vh;
   border: groove;
   border-color: grey;
-  border-width: 4px;
+  border-width: 2px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -202,22 +217,19 @@ div.contactpanel{
   /*padding-top: 2%;*/
 }
 div.contacttitles{
-  padding-right: 10px;
+  padding-left: 10px;
 }
 h1.contanttitles{
-  font-size: 150%;
-  font-family: Roboto;
+  font-size: 4vh;
+  font-family: "Futura Regular";
 }
 
-/* photos */
-
-
-/* other */
+/* picture */
 
 .family-icon-scroller {
-  height: 87px;
+  height: 22vh;
   -webkit-overflow-scrolling: touch;
-  padding: 15px 15px 12px;
+  padding: 0.6vh 0.2vh;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -227,9 +239,54 @@ h1.contanttitles{
 .family-icon {
   display: inline-block;
   vertical-align: top;
-  height: 5%;
-  width: 5%;
+  width: 22vh;
   white-space: normal;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-left: 0.5vw;
+  /*border: solid;
+  border-width: 1px;*/
+
+}
+
+img.picturesicon{
+  width: 22vh;
+  height: 22vh;
+  object-fit: cover;
+}
+
+div.cardsetup{
+  height: 29vh;
+  margin-top: 1vh;
+  margin-bottom: 0vh;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* test */
+ion-content.test{
+  background-image: url("../img/firstday.png");
+}
+
+/* sponsor */
+div.sponsor{
+  height: 40vh;
+  width: 98vw;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  background-position: right;
+  border: dotted;
+  border-width: thin;
+}
+
+img.sponsorimg {
+  padding-top: 0px;
+  padding-left: 1vw;
+  max-height: 15vh;
+}
+
+h1.sponsortitle {
+  font-family: "Futura Regular";
+  font-size: 4vh;
+  border-width: 1px;
+  border-bottom: solid;
+  vertical-align: top;
 }
