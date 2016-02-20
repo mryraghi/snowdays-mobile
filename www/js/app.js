@@ -45,7 +45,8 @@ angular.module('snowdays', ['ionic', 'starter.controllers'])
         url: '/schedule',
         views: {
           'menuContent': {
-            templateUrl: 'templates/schedule.html'
+            templateUrl: 'templates/schedule.html',
+            controller: 'ScheduleModal'
           }
         }
       })

@@ -32,7 +32,6 @@ angular.module('starter.controllers', [])
     // Open the login modal
     $scope.credits = function () {
       $scope.modal.show();
-      console.log("you tried");
     };
   })
 
@@ -94,5 +93,124 @@ angular.module('starter.controllers', [])
       $scope.imageSrc  = 'https://dl.dropboxusercontent.com/u/107006905/snow'+ index+'.jpg';
       $scope.modal.show();
     }
-  }
-);
+  })
+
+  //huge controller to handle the schedule modal views
+  .controller('ScheduleModal', function($scope, $ionicModal){
+
+    $ionicModal.fromTemplateUrl('scheduleextra.html', {
+      scope: $scope,
+      animation: 'slide-in-up'
+    }).then(function(modal) {
+      $scope.modal = modal;
+    });
+
+    $scope.openModal = function() {
+      $scope.modal.show();
+    };
+
+    $scope.closeModal = function() {
+      $scope.modal.hide();
+    };
+
+    //Cleanup the modal when we're done with it!
+    $scope.$on('$destroy', function() {
+      $scope.modal.remove();
+    });
+    // Execute action on hide modal
+    $scope.$on('modal.hidden', function() {
+      // Execute action
+    });
+    // Execute action on remove modal
+    $scope.$on('modal.removed', function() {
+      // Execute action
+    });
+    $scope.$on('modal.shown', function() {
+      console.log('Modal is shown!');
+    });
+
+    $scope.showExtraInfoone = function(index) {
+      $scope.extrainfotext = 'nothing';
+      switch (index){
+        case 101: $scope.extrainfotext = 'This is where the check in will take place in room: ';
+              break;
+        case 102: $scope.extrainfotext = 'Dinner packages are distributed infront of the Mensa at UNIBZ';
+              break;
+        case 103: $scope.extrainfotext = 'Bus depart from UniBz, Haus St. Benedikt and Univercity';
+          break;
+        case 104: $scope.extrainfotext = 'Night skiing, snowboarding and sledging @ Obereggen';
+          break;
+        case 105: $scope.extrainfotext = 'Mascotte sledging race competition. Go watch your UNI!';
+          break;
+        case 106: $scope.extrainfotext = 'Opening ceremony @ Obereggen';
+          break;
+        case 107: $scope.extrainfotext = 'FLUO PARTY – Light the snow @ Platzl and @ Tipi';
+          break;
+        case 108: $scope.extrainfotext = 'Bus departures from Obereggen';
+          break;
+      }
+      $scope.modal.show();
+    }
+
+    $scope.showExtraInfotwo = function(index) {
+      $scope.extrainfotext = 'nothing';
+      switch (index){
+        case 201: $scope.extrainfotext = 'Breakfast @ Mensa UniBz, @ Haus St. Benedikt and @ Univercity';
+          break;
+        case 202: $scope.extrainfotext = 'Bus depart from UniBz, Haus St. Benedikt and Univercity. Last Bus at 9.30';
+          break;
+        case 203: $scope.extrainfotext = 'Skii and Snowboard session @ Ultental';
+          break;
+        case 204: $scope.extrainfotext = 'Ski race and Snowboard race @ Ultental'; // need more info
+          break;
+        case 205: $scope.extrainfotext = '......';  // need more info
+          break;
+        case 206: $scope.extrainfotext = '.......'; // need more info
+          break;
+        case 207: $scope.extrainfotext = 'Paragliding show by FALL with STYLE ACRO TEAM'; // need more info
+          break;
+        case 208: $scope.extrainfotext = '.......'; // need more info
+          break;
+        case 209: $scope.extrainfotext = '.......'; // need more info
+          break;
+        case 2010: $scope.extrainfotext = 'Bus departures from Ultental'; // need more info
+          break;
+        case 2011: $scope.extrainfotext = 'Dinner @ Mensa UNIBZ'; // need more info
+          break;
+        case 2012: $scope.extrainfotext = 'TOGA PARTY - Invoking Khione @ UNIBZ'; // need more info
+          break;
+      }
+      $scope.modal.show();
+    }
+
+    $scope.showExtraInfothree = function(index) {
+      $scope.extrainfotext = 'nothing';
+      switch (index){
+        case 301: $scope.extrainfotext = 'Breakfast @ Mensa UniBz, @ Haus St. Benedikt and @ Univercity';
+          break;
+        case 302: $scope.extrainfotext = 'Bus depart from UniBz, Haus St. Benedikt and Univercity. Last Bus at 11.00';
+          break;
+        case 303: $scope.extrainfotext = 'Lunch @ Hotel Il Caminetto in Canazei';
+          break;
+        case 304: $scope.extrainfotext = 'Human Balilla Soccer and Snowvolley Tournament'; // need more info
+          break;
+        case 305: $scope.extrainfotext = '......';  // need more info
+          break;
+        case 306: $scope.extrainfotext = '.......'; // need more info
+          break;
+        case 307: $scope.extrainfotext = 'Paragliding show by FALL with STYLE ACRO TEAM'; // need more info
+          break;
+        case 308: $scope.extrainfotext = '.......'; // need more info
+          break;
+        case 309: $scope.extrainfotext = '.......'; // need more info
+          break;
+        case 3010: $scope.extrainfotext = 'Bus departures from Ultental'; // need more info
+          break;
+        case 3011: $scope.extrainfotext = 'Dinner @ Mensa UNIBZ'; // need more info
+          break;
+        case 3012: $scope.extrainfotext = 'TOGA PARTY, Invoking Khione @ UNIBZ'; // need more info
+          break;
+      }
+      $scope.modal.show();
+    }
+});

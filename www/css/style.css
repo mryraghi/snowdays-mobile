@@ -56,7 +56,7 @@ h3.title {
 }
 
 h5.sm-index-subtitle {
-  font-family: 'BentonSans Regular', sans-serif;
+  font-family: "Futura Regular";
   line-height: 22px;
   padding-top: 20px;
   color: #737373;
@@ -140,6 +140,30 @@ ion-item.item svg {
   height: 100%;
 }
 /* Schedule */
+h1.leftside{
+  font-family: "Futura Regular";
+  font-weight: bold;
+  text-align: left;
+  float: left;
+  margin: 0%;
+  font-size: 4vw;
+}
+h1.rightside{
+  font-family: "Futura Regular";
+  text-align: right;
+  float: right;
+  margin: 0%;
+  font-size: 5vw;
+}
+
+h1.scheduleextrainfo{
+  padding-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-family: "Futura Regular";
+  font-size: 6vw;
+}
+
 
 ion-slide-box.schedule{
   background: black;
@@ -147,14 +171,14 @@ ion-slide-box.schedule{
 
 ion-slide.firstday {
   background-image: url("../img/firstday.png");
-  height: 94.5vh;
+  /*height: 130vh;*/
   border-right: groove;
   border-left: groove;
   border-width: 1px;
 }
 ion-slide.secondday{
   background-image: url("../img/secondday.png");
-  height: 94.5vh;
+  /*height: 130vh;*/
   border-right: groove;
   border-left: groove;
   border-width: 1px;
@@ -162,7 +186,7 @@ ion-slide.secondday{
 }
 ion-slide.thirdday{
   background-image: url("../img/thirdday.png");
-  height: 94.5vh;
+  /*height: 94.5vh;*/
   border-right: groove;
   border-left: groove;
   border-width: 1px;
@@ -175,7 +199,6 @@ ion-item.dayitem {
   border-color: black;
   border-width: 1px;
   background: inherit;
-  font-family: Roboto;
 }
 
 h1.scheduletitles{
@@ -183,18 +206,20 @@ h1.scheduletitles{
   padding-top: 1vh;
   padding-left: 2vw;
 }
+
+
 /* Contacts*/
 
-button.redbutton{
+.redbutton{
   background-image: url("../img/rednumber.png");
 }
-button.bluebutton{
+.bluebutton{
   background-image: url("../img/bluenumber.png");
 }
-button.yellowbutton{
+.yellowbutton{
   background-image: url("../img/yellownumber.png");
 }
-button.contactbutton{
+.contactbutton{
   font-family: "Futura Regular";
   font-weight: bold;
   width: 90vw;
