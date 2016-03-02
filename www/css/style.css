@@ -237,18 +237,28 @@ h1.scheduletitles{
 }
 div.contactpanel{
   align-content: center;
-  padding-bottom: 1vh;
+  padding-bottom: 0px;
   align:center;
   width: 100vw;
   /*padding-top: 2%;*/
 }
-div.contacttitles{
+div.contanttitles {
   padding-left: 10px;
 }
-h1.contanttitles{
-  font-size: 4vh;
+h1.contanttitles {
+  font-size: 8vw;
   font-family: "Futura Regular";
+  margin-bottom: 0px;
 }
+div.contactmininames{
+  font-size: 4vw;
+  font-family: "Futura Regular";
+  padding: 0px;
+  margin: 0px;
+  padding-right: 1vw;
+  text-align: right;
+}
+
 
 /* picture */
 
