@@ -16,7 +16,6 @@ angular.module('snowdays', ['ionic', 'starter.controllers'])
         cordova.plugins.Keyboard.disableScroll(true);
 
       }
-      angular.module('')
       if (window.StatusBar) {
         StatusBar.styleDefault();
       }

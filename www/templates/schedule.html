@@ -4,174 +4,379 @@
     </ion-nav-back-button>
 
     <ion-nav-buttons side="left">
-      <img src="../img/icon/menu.png" id="sm-menu-bars" menu-toggle="left">
+      <img src="../img/svg/lines7.svg" id="sm-menu-bars" menu-toggle="left">
     </ion-nav-buttons>
   </ion-nav-bar>
   <ion-content>
     <div>
-    <ion-slide-box class="schedule" on-slide-changed="slideHasChanged($index)"
-    does-continue="true" show-pager="false">
-      <ion-slide class="firstday">
-        <div>
-          <h1 class="scheduletitles">March 3 (first day)</h1>
-          <h1 style="font-size: 4vw; font-family: 'Futura Regular'; padding: 0px">You can click on the time for more info!</h1>
-          <ion-list>
-            <ion-item class="dayitem" ng-click="showExtraInfoone(101)">
-              <h1 class="leftside">09.00 - 17.00</h1>
-              <h1 class="rightside">Check In</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfoone(102)">
-              <h1 class="leftside">17.00 - 18.30</h1>
-              <h1 class="rightside">Dinner</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfoone(103)">
-              <h1 class="leftside">18.00 - 19.30</h1>
-              <h1 class="rightside">Bus leave from BZ</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfoone(104)">
-              <h1 class="leftside">19.00 - 21.30</h1>
-              <h1 class="rightside">Skiing</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfoone(105)">
-              <h1 class="leftside">21.40 - 22.20</h1>
-              <h1 class="rightside">Bus departure</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfoone(106)">
-              <h1 class="leftside">22.30 - 03.00</h1>
-              <h1 class="rightside">FLUO Party</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfoone(107)">
-              <h1 class="leftside">23.30 - 02.00</h1>
-              <h1 class="rightside">Opening Ceremony</h1>
-            </ion-item>
-          </ion-list>
-        </div>
-      </ion-slide>
-      <ion-slide class="secondday">
-        <div>
-          <h1 class="scheduletitles">March 4 (second day)</h1>
-          <h1 style="font-size: 4vw; font-family: 'Futura Regular'; padding: 0px">You can click on the time for more info!</h1>
-          <ion-list>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(201)">
-              <h1 class="leftside">07.00 - 09.00</h1>
-              <h1 class="rightside">Breakfast</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(202)">
-              <h1 class="leftside">08.00 - 09.30</h1>
-              <h1 class="rightside">Bus leave from Bolzano</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(203)">
-              <h1 class="leftside">10.00 - 17.15</h1>
-              <h1 class="rightside">Skii and Snowboarding</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(2051)">
-              <h1 class="leftside">10.00 - 12.00</h1>
-              <h1 class="rightside">Ski Course for Beginners</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(204)">
-              <h1 class="leftside">10.30 - 11.30</h1>
-              <h1 class="rightside">Salewa Ski Race</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(205)">
-              <h1 class="leftside">11.00 - 12.00</h1>
-              <h1 class="rightside">Snowshoeing Group 1</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(206)">
-              <h1 class="leftside">12.00 - 14.00</h1>
-              <h1 class="rightside">Lunch</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(207)">
-              <h1 class="leftside">12.30 – 14.30</h1>
-              <h1 class="rightside">Paragliding Show</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(208)">
-              <h1 class="leftside">13.30 – 14.30</h1>
-              <h1 class="rightside">Snowshoeing Group 2</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(209)">
-              <h1 class="leftside">15.00 - 16.00</h1>
-              <h1 class="rightside">Snack Break</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(2010)">
-              <h1 class="leftside">15.45 - 17.15</h1>
-              <h1 class="rightside">Bus leave from Ultental</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(2011)">
-              <h1 class="leftside">18.30 - 20.00</h1>
-              <h1 class="rightside">Dinner</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfotwo(2012)">
-              <h1 class="leftside">22.00 - 02.30</h1>
-              <h1 class="rightside">TOGA PARTY!</h1>
-            </ion-item>
-          </ion-list>
-        </div>
-      </ion-slide>
-      <ion-slide class="thirdday">
-        <div>
-          <h1 class="scheduletitles">March 5 (third day)</h1>
-          <h1 style="font-size: 4vw; font-family: 'Futura Regular'; padding: 0px">You can click on the time for more info!</h1>
-          <ion-list>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(301)">
-              <h1 class="leftside">08.00 - 09.30</h1>
-              <h1 class="rightside">Breakfast</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(302)">
-              <h1 class="leftside">09.30 - 11.00</h1>
-              <h1 class="rightside">Bus leave from Bolzano</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(303)">
-              <h1 class="leftside">11.30 - 13.30</h1>
-              <h1 class="rightside">Lunch</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(304)">
-              <h1 class="leftside">13.00 - 17.00</h1>
-              <h1 class="rightside">Tournaments</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(305)">
-              <h1 class="leftside">14.00 - 19.00</h1>
-              <h1 class="rightside">Swimming Pool</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(306)">
-              <h1 class="leftside">14.00 - 15.00</h1>
-              <h1 class="rightside">RedBull Riding!</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(307)">
-              <h1 class="leftside">15.00 - 16.00</h1>
-              <h1 class="rightside">Salewa Table Boulder</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(308)">
-              <h1 class="leftside">16.00 - 17.00</h1>
-              <h1 class="rightside">Snack Break</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(309)">
-              <h1 class="leftside">17.00 - 20.00</h1>
-              <h1 class="rightside">Shower Time!</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(3010)">
-              <h1 class="leftside">18.30 - 20.00</h1>
-              <h1 class="rightside">Chill Out</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(3011)">
-              <h1 class="leftside">20.30 - 22.30</h1>
-              <h1 class="rightside">Dinner</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(3012)">
-              <h1 class="leftside">22.30 - 23.30</h1>
-              <h1 class="rightside">Awards and Final Ceremony</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(3013)">
-              <h1 class="leftside">23.30 - 04.00</h1>
-              <h1 class="rightside">PYJAMA PARTY!</h1>
-            </ion-item>
-            <ion-item class="dayitem" ng-click="showExtraInfothree(3014)">
-              <h1 class="leftside">01.00 - 04.00</h1>
-              <h1 class="rightside">Bus leave from Canazei</h1>
-            </ion-item>
-          </ion-list>
-        </div>
-      </ion-slide>
-    </ion-slide-box>
+      <ion-slide-box class="schedule" on-slide-changed="slideHasChanged()" does-continue="true" show-pager="false">
+        <ion-slide class="firstday">
+          <h1 class="text-center schedule_title">Thursday 3rd</h1>
+          <h6 class="text-center">You can click on the time for more info!</h6>
+
+          <ul class="list">
+            <li class="item" ng-click="showExtraInfotwo(201)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>09.00 - 17.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Check-in</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(201)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>17.00 - 18.30</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Dinner</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(201)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>18.00 - 19.30</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Bus leave from BZ</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(201)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>19.00 - 21.30</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Skiing</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(201)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>21.40 - 22.20</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Bus departure</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(201)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>22.30 - 03.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>FLUO Party</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(201)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>23.30 - 02.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Opening Ceremony</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </ion-slide>
+
+
+        <ion-slide class="secondday">
+          <h1 class="text-center schedule_title">Friday 4th</h1>
+          <h6 class="text-center">You can click on the time for more info!</h6>
+
+
+          <ul class="list">
+            <li class="item" ng-click="showExtraInfotwo(201)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>07.00 - 09.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Breakfast</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(202)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>08.00 - 09.30</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Bus leave from Bolzano</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(203)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>10.00 - 17.15</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Ski and Snowboarding</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(2051)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>10.00 - 12.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Ski Course for Beginners</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(204)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>10.30 - 11.30</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Salewa Ski Race</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(205)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>11.00 - 12.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Snowshoeing Group 1</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(206)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>12.00 - 14.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Lunch</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(207)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>12.30 – 14.30</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Paragliding Show</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(208)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>13.30 - 14.30</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Snowshoeing Group 2</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(209)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>15.00 - 16.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Snack Break</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(2010)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>15.45 - 17.15</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Bus leave from Ultental</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(2011)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>18.30 - 20.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Dinner</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfotwo(2012)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>22.00 - 02.30</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>TOGA PARTY!</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </ion-slide>
+
+
+        <ion-slide class="thirdday">
+          <h1 class="text-center schedule_title">Saturday 6th</h1>
+          <h6 class="text-center">You can click on the time for more info!</h6>
+
+          <ul class="list">
+            <li class="item" ng-click="showExtraInfothree(301)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>08.00 - 09.30</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Breakfast</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(302)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>09.30 - 11.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Bus leave from Bolzano</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(303)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>11.30 - 13.30</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Lunch</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(304)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>13.00 - 17.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Tournaments</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(305)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>14.00 - 19.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Swimming Pool</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(306)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>14.00 - 15.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>RedBull Riding</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(307)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>15.00 - 16.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Salewa Table Boulder</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(308)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>16.00 - 17.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Snack Break</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(309)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>17.00 - 20.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Shower Time</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(3010)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>18.30 - 20.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Chill Out</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(3011)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>20.30 - 22.30</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Dinner</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(3012)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>22.30 - 23.30</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Awards and Final Ceremony</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(3013)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>23.30 - 04.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>PYJAMA PARTY!</p>
+                </div>
+              </div>
+            </li>
+            <li class="item" ng-click="showExtraInfothree(3014)">
+              <div class="row">
+                <div class="col-md-4 text-left">
+                  <strong>01.00 - 04.00</strong>
+                </div>
+                <div class="col-md-8 text-right">
+                  <p>Bus leave from Canazei</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </ion-slide>
+      </ion-slide-box>
     </div>
     <script type="text/ng-template" id="scheduleextra.html">
       <ion-modal-view>

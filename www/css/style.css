@@ -38,11 +38,10 @@
 
 @font-face {
   font-family: 'Futura Regular';
-  src: url('../fonts/FuturaStd-Book.otf');
-  /*src: url('../fonts/BentonSansRegular/BentonSans%20Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/BentonSansRegular/BentonSans%20Regular.woff') format('woff'),
-  url('../fonts/BentonSansRegular/BentonSans%20Regular.ttf') format('truetype'),
-  url('../fonts/BentonSansRegular/BentonSans%20Regular.svg') format('svg');*/
+  src: url('../fonts/Futura/ufonts.com_futura-medium.otf');
+  src: url('../fonts/Futura/ufonts.com_futura-medium.woff') format('woff'),
+  url('../fonts/Futura/ufonts.com_futura-medium.ttf') format('truetype'),
+  url('../fonts/Futura/ufonts.com_futura-medium.svg') format('svg');
 }
 
 /* INDEX */
@@ -108,7 +107,7 @@ video {
 
 .sm-list-item {
   font-family: 'BentonSans Medium', sans-serif;
-  color: #aaa;
+  color: #7c7c7c;
 }
 
 .ion-chevron-left:before {
@@ -129,11 +128,8 @@ ion-item.item a {
   display: flex;
 }
 
-ion-item.item svg {
-  height: 20px;
-  width: 20px;
+ion-item.item img {
   margin-right: 10px;
-  fill: #AAAAAA;
 }
 
 .sm-full-height {
@@ -170,32 +166,16 @@ ion-slide-box.schedule{
 }
 
 ion-slide.firstday {
-  background-image: url("../img/firstday.png");
-  /*height: 130vh;*/
-  border-right: groove;
-  border-left: groove;
-  border-width: 1px;
+  background-color: #2ecc71;
 }
 ion-slide.secondday{
-  background-image: url("../img/secondday.png");
-  /*height: 130vh;*/
-  border-right: groove;
-  border-left: groove;
-  border-width: 1px;
-
+  background-color: #e74c3c;
 }
 ion-slide.thirdday{
-  background-image: url("../img/thirdday.png");
-  /*height: 94.5vh;*/
-  border-right: groove;
-  border-left: groove;
-  border-width: 1px;
-
+  background-color: #3498db;
 }
 ion-item.dayitem {
   border-bottom: dotted;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
   border-color: black;
   border-width: 1px;
   background: inherit;
@@ -325,4 +305,44 @@ h1.sponsortitle {
   border-width: 1px;
   border-bottom: solid;
   vertical-align: top;
+}
+
+
+.row {
+  margin: 0 !important;
+  padding: 10px !important;
+}
+
+.col-md-8 {
+  width: 100%;
+}
+
+.col-md-4 strong {
+  font-family: "Futura Regular";
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.col-md-8 p {
+  font-family: "Futura Regular";
+  font-size: 20px;
+}
+
+.firstday .list .item {
+  padding: 0 !important;
+}
+
+.secondday .list .item {
+  padding: 0 !important;
+}
+
+.thirdday .list .item {
+  padding: 0 !important;
+}
+
+.schedule_title {
+  font-family: "Againts";
+  color: #fff;
+  margin-bottom: 15px;
+  padding-top: 10px;
 }
