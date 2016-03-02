@@ -319,13 +319,15 @@ h1.sponsortitle {
 
 .col-md-4 strong {
   font-family: "Futura Regular";
-  font-size: 20px;
+  font-size: 3vh;
   letter-spacing: 2px;
+  line-height: 4vh;
 }
 
 .col-md-8 p {
   font-family: "Futura Regular";
-  font-size: 20px;
+  font-size: 3vh;
+  line-height: 4vh;
 }
 
 .firstday .list .item {
