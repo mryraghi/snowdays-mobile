@@ -136,20 +136,22 @@ ion-item.item img {
   height: 100%;
 }
 /* Schedule */
-h1.leftside{
+.leftside{
   font-family: "Futura Regular";
   font-weight: bold;
   text-align: left;
   float: left;
   margin: 0%;
-  font-size: 4vw;
+  font-size: 7vw;
+  color: #444444;
 }
-h1.rightside{
+.rightside{
   font-family: "Futura Regular";
   text-align: right;
   float: right;
   margin: 0%;
-  font-size: 5vw;
+  font-size: 6vw;
+  color: #444444;
 }
 
 h1.scheduleextrainfo{
@@ -284,19 +286,21 @@ ion-content.test{
 
 /* sponsor */
 div.sponsor{
-  height: 40vh;
+  //height: 40vh;
   width: 98vw;
   margin-top: 1vh;
   margin-left: 1vw;
   background-position: right;
   border: dotted;
   border-width: thin;
+  overflow-y: inherit;
 }
 
 img.sponsorimg {
   padding-top: 0px;
   padding-left: 1vw;
   max-height: 15vh;
+  max-width: 40vw;
 }
 
 h1.sponsortitle {
@@ -345,6 +349,7 @@ h1.sponsortitle {
 .schedule_title {
   font-family: "Againts";
   color: #fff;
-  margin-bottom: 15px;
-  padding-top: 10px;
+  margin-bottom: 2vh;
+  padding-top: 1.5vh;
+  font-size: 13vw;
 }
