@@ -1,46 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc8ef2e5-1921-4c15-b3d4-7cf13c67d190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/fonts/Futura/ufonts.com_futura-medium.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/fonts/Futura/ufonts.com_futura-medium.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/fonts/Futura/ufonts.com_futura-medium.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/fonts/Futura/ufonts.com_futura-medium.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/camera90.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/down-arrow4.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/heart301.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/house158.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/light92.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/lightning23.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/lines7.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/load2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/location46.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/mac6.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/mail81.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/map106.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/mountain35.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/mouse49.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/phone382.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/play111.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/settings56.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/snow42.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/star178.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/tick9.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/timetable.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/trophy71.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/svg/user163.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/bootstrap.min.js" />
+    <list default="true" id="cc8ef2e5-1921-4c15-b3d4-7cf13c67d190" name="Default" comment="Updates">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/contacts.html" afterPath="$PROJECT_DIR$/www/templates/contacts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/index.html" afterPath="$PROJECT_DIR$/www/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/menu.html" afterPath="$PROJECT_DIR$/www/templates/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/pictures.html" afterPath="$PROJECT_DIR$/www/templates/pictures.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/schedule.html" afterPath="$PROJECT_DIR$/www/templates/schedule.html" />
     </list>
     <ignored path="snowdays-mobile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13935484">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            <state vertical-scroll-proportion="-22.666666">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -126,7 +90,17 @@
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="133" column="6" selection-start-line="133" selection-start-column="6" selection-end-line="134" selection-end-column="33" />
+              <caret line="98" column="60" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16258064">
+              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -168,14 +142,14 @@
         <option value="$PROJECT_DIR$/www/templates/credits.html" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/templates/index.html" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/www/js/controllers.js" />
         <option value="$PROJECT_DIR$/www/templates/schedule.html" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/templates/contacts.html" />
         <option value="$PROJECT_DIR$/www/templates/pictures.html" />
         <option value="$PROJECT_DIR$/www/templates/menu.html" />
+        <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -464,6 +438,13 @@
       <option name="number" value="Default" />
       <updated>1455181059501</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updates">
+      <created>1456933910736</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1456933910736</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -472,6 +453,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16701902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -499,6 +481,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -778,14 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48774195">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3328877">
@@ -806,14 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3333334">
           <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="133" column="6" selection-start-line="133" selection-start-column="6" selection-end-line="134" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -855,8 +825,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13935484">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state vertical-scroll-proportion="-22.666666">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="98" column="60" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16258064">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
           <folding />
         </state>
       </provider>

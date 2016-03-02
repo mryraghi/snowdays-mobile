@@ -96,7 +96,7 @@ angular.module('starter.controllers', [])
     })
 
   //huge controller to handle the schedule modal views
-  .controller('ScheduleModal', function ($scope, $ionicModal, $ionicScrollDelegate) {
+  .controller('ScheduleModal', function ($scope, $ionicModal) {
     $ionicModal.fromTemplateUrl('scheduleextra.html', {
       scope: $scope,
       animation: 'slide-in-up'
